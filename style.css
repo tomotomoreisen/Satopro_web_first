@@ -9,3 +9,9 @@
 #member{
   display: inline-block;
 }
+
+#main{
+	margin: 0 auto;
+	width: 75%;
+	text-align: center;
+}
