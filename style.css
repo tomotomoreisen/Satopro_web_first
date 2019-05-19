@@ -15,3 +15,12 @@
 	width: 75%;
 	text-align: center;
 }
+
+.ui-widget-overlay.custom-overlay{
+	background-color:black;
+	background-image:none;
+	opacity:0.8;
+	z-index:1040;
+
+}
+
