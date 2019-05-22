@@ -1,5 +1,6 @@
 #intro{
   display: inline-block;
+  padding-right:5%;
 }
 
 #activity{
@@ -8,14 +9,43 @@
 
 #member{
   display: inline-block;
+  padding-left:5%;
 }
 
 #main{
-	margin: 0 auto;
+	margin: 15% auto;
 	width: 75%;
 	text-align: center;
 }
 
+#title{
+	font-family:century gothic;
+	font-size:70px;
+	border:solid 2px;
+	width:50%;
+	margin:2% auto;
+}
+
+#syokai{
+	font-size: 30px;
+	font-family:sans-serif;
+}
+
+#katsudo{
+	font-size:30px;
+	font-family:sans-serif;
+}
+
+#mentsu{
+	font-size:30px;
+	font-family:sans-serif;
+}
+
+#footlogo{
+	font-size:20px;
+	font-family:sans-serif;
+}
+/* dialogのoverlayのデザイン */
 .ui-widget-overlay.custom-overlay{
 	background-color:black;
 	background-image:none;
@@ -23,4 +53,35 @@
 	z-index:1040;
 
 }
+/* dialog自体のデザイン */
+
+/*.wkDialogClass{}*/
+
+.ui-dialog-titlebar{
+	background: none;
+	border:none;
+
+	height: 0;
+	border-top:5px solid #000;
+	border-radius: 0;
+	padding:0;
+
+}
+
+.ui-dialog-title{
+	display:none;
+}
+
+.ui-dialog-titlebar button{
+	display:none;
+}
+.ui-dialog-content{}
+
+
+.popdialog .ui-dialog-titlebar-close {
+        top: 10px;
+    }
+.popdialog .ui-dialog-content {
+        position: static;
+    }
 
