@@ -16,6 +16,7 @@
 	margin: 15% auto;
 	width: 75%;
 	text-align: center;
+	min-width:600px;
 }
 
 #title{
@@ -24,6 +25,8 @@
 	border:solid 2px;
 	width:50%;
 	margin:2% auto;
+	min-width:538px;
+	max-width:538px;
 }
 
 #syokai{
@@ -44,6 +47,23 @@
 #footlogo{
 	font-size:20px;
 	font-family:sans-serif;
+}
+
+#first_low{
+	height:80%;
+	width:100%;
+}
+#memberintro_center{
+
+}
+
+.memberintro_25{
+	display:inline-block;
+	width:25%;
+}
+.memberintro_ptag{
+	width:25%;
+	margin:0 auto;
 }
 /* dialogのoverlayのデザイン */
 .ui-widget-overlay.custom-overlay{
