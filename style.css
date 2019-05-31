@@ -24,12 +24,9 @@
 	font-size:70px;
 	border:solid 2px;
 	margin:2% auto;
-<<<<<<< HEAD
-=======
 	min-width: 582px;
 	max-width: 582px;
   color: #006699
->>>>>>> 3ed44e7b32e03ad199e8bc3479164fb734e2b2d2
 }
 
 #syokai{
@@ -53,10 +50,7 @@
   border-bottom: dotted 1px #006699;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3ed44e7b32e03ad199e8bc3479164fb734e2b2d2
 /* dialogのoverlayのデザイン */
 .ui-widget-overlay.custom-overlay{
 	background-color:black;
