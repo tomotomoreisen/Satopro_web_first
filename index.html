@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/jquery-ui.css">
 <link rel="stylesheet" tyep="text/css" href="style.css">
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="app.js"></script> <!-- Tumblrの記事取ってくるやつ-->
 </head>
 
 <body>
@@ -31,11 +32,19 @@
 	<div class="box1">
 	<span>Tumblrで日々の活動記録をアップしています。</span>
 </div>
-	 <p><iframe src="https://www.tumblr.com/" width="100%" height="400"></iframe></p>
-	 <div class="box1">
+
+	<div id="post">
+    	<p id="post-ttl"></p>
+    	<p id="post-body"></p>
+    	<p id="post-footer" class="footer"></p>
+		<p id="post-tags" class="footer"></p>
+    	<a id="post-link">Tumblr</a>
+	</div>
+
+<div class="box1">
  	<span>紹介動画もアップしています！！</span>
  </div>
-	<p><iframe src="https://www.tumblr.com/" width="100%" height="400"></iframe></p>
+ <!-- <p><iframe src="https://www.tumblr.com/" width="100%" height="400"></iframe></p> --> 
 </div>
 
 <div id="member"><p id="mentsu">メンバー</p></div>
