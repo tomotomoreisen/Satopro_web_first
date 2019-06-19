@@ -160,3 +160,22 @@ h5{
 .popdialog .ui-dialog-content {
         position: static;
     }
+
+/*i tumblrの記事の部分のデザイン */
+#post{
+	width:75%;
+	margin:0 auto;
+}
+
+#post-ttl{
+	font-size:24px;
+	border-bottom:solid 2px;
+	border-color: gray;
+}
+
+.footer{
+	background-color:rgba(230, 230, 230, 0.7);
+	display:inline;
+}
+
+
