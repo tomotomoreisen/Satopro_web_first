@@ -178,4 +178,8 @@ h5{
 	display:inline;
 }
 
-
+/* youtubeの部分のやつ*/
+#videoPlayer{
+	margin:0 auto;
+	width:89.5%;
+}
