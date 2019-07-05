@@ -1,5 +1,5 @@
 $(function(){
-	var id = "UCjNbOD6Q1mnilL35BtZ6aYQ"; /*チャンネルid*/
+	var id = "UCb68F3pdAvDZWdZZ6PWTchw"; /*チャンネルid*/
 	var key = "AIzaSyDwSb2U_fKKLogP79QtUGoL8Objj82VG_Y"; /* api key*/
 	$.ajax({
 		type: "GET",
