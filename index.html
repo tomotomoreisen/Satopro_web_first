@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<meta charset="utf-16"/>
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- jQuery UI -->
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/black-tie/jquery-ui.css">
 <link rel="stylesheet" tyep="text/css" href="style.css">
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="app.js"></script> <!-- Tumblrの記事取ってくるやつ-->
+<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="scripts/gettextdata.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script> <!-- Tumblrの記事取ってくるやつ-->
+<script type="text/javascript" src="scripts/getVideo.js"></script>
 </head>
 
 <body>
@@ -21,7 +24,8 @@
 		<h1>紹介</h1>
 </div>
 <IMG SRC="image/1.jpg"width="700"height="400">
-	<h3>佐藤プロジャクトでは遊んでいる人が運動を意識せず、「ただゲームを楽しんでいるだけで運動不足を解消できた」と言うような作品を作成することを目標にしています。このプロジェクトでは運動に娯楽と目的を与えることで普段体を動かさない人が運動するきっかけになればと思っています。</h3>
+	<h3>佐藤プロジャクトでは、、、、</h3>
+	<p id="description"></p>
 </div>
 <div id="activity"><p id="katsudo">活動内容</p></div>
 <div id="dialog_act" class="popdialog">
@@ -44,7 +48,7 @@
 <div class="box1">
  	<span>紹介動画もアップしています！！</span>
  </div>
- <!-- <p><iframe src="https://www.tumblr.com/" width="100%" height="400"></iframe></p> --> 
+  <p id="videoPlayer"></p> 
 </div>
 
 <div id="member"><p id="mentsu">メンバー</p></div>
@@ -60,11 +64,11 @@
 		   </figure></td>
 	   <td>
 	   <figure>
-		   <img src="image/tata.jpg" width="200"><figcaption><h4>山本英玄</h4><h5>システム班<br><br>応用演習：PC</h5></figcaption>
-		   </figure></td>傳井茉由
+		   <img src="image/yama.jpg" width="200"><figcaption><h4>山本英玄</h4><h5>システム班<br><br>応用演習：PC</h5></figcaption>
+		   </figure></td>
 		   <td>
 	   <figure>
-		   <img src="image/tata.jpg" width="200"><figcaption><h4>竹口朋希</h4><h5>システム班<br><br>応用演習：PC</h5></figcaption>
+		   <img src="image/take.jpg" width="200"><figcaption><h4>竹口朋希</h4><h5>システム班<br><br>応用演習：PC</h5></figcaption>
 			   </figure></td>
 		   </tr>
 	   </table>
@@ -72,35 +76,35 @@
 	   <table class="tbl">
 	   <tr><td>
 		<figure>
-			<img src="image/tata.jpg" width="200"><figcaption><h4>真鍋拓</h4><h5>グラフィック班<br><br>応用演習：IB</h5></figcaption>
+			<img src="image/mana.jpg" width="200"><figcaption><h4>真鍋拓</h4><h5>グラフィック班<br><br>応用演習：IB</h5></figcaption>
 		   </figure></td>
 		   <td>
 	   <figure>
-		   <img src="image/tata.jpg" width="200"><figcaption><h4>傳井茉由</h4><h5>グラフィック班<br><br>応用演習：IS</h5></figcaption>
+		   <img src="image/mayu.jpg" width="200"><figcaption><h4>傳井茉由</h4><h5>グラフィック班<br><br>応用演習：IS</h5></figcaption>
 			   </figure></td>
 			   <td>
 	   <figure>
-		   <img src="image/tata.jpg" width="200"><figcaption><h4>齋藤拓樹</h4><h5>グラフィック班<br><br>応用演習：IS</h5></figcaption>
+		   <img src="image/sai.jpg" width="200"><figcaption><h4>齋藤拓樹</h4><h5>グラフィック班<br><br>応用演習：IS</h5></figcaption>
 				   </figure></td>
 		   </tr>
 	   </table>
 		 <table class="tbl">
 	   <tr><td>
 		<figure>
-			<img src="image/tata.jpg" width="200"><figcaption><h4>七枝孝輔</h4><h5>データ班<br><br>応用演習：MI</h5></figcaption>
+			<img src="image/nana.jpg" width="200"><figcaption><h4>七枝孝輔</h4><h5>データ班<br><br>応用演習：MI</h5></figcaption>
 		   </figure></td>
 		   <td>
 	   <figure>
-		   <img src="image/tata.jpg" width="200"><figcaption><h4>安荘美羽</h4><h5>データ班<br><br>応用演習：CD</h5></figcaption>
+		   <img src="image/miwa.jpg" width="200"><figcaption><h4>安荘美羽</h4><h5>データ班<br><br>応用演習：CD</h5></figcaption>
 			   </figure></td>
 				 <td>
 		 		<figure>
-		 			<img src="image/tata.jpg" width="200"><figcaption><h4>有路滉平</h4><h5>データ班<br><br>応用演習：MI</h5></figcaption>
+		 			<img src="image/ari.jpg" width="200"><figcaption><h4>有路滉平</h4><h5>データ班<br><br>応用演習：MI</h5></figcaption>
 		 			</figure></td>
 		   </tr>
 			 <tr><td>
 			<figure>
-				<img src="image/tata.jpg" width="200"><figcaption><h4>佐藤慶一先生</h4><h5>政策科学専門</h5></figcaption>
+				<img src="image/sato.jpg" width="200"><figcaption><h4>佐藤慶一先生</h4><h5>政策科学専門</h5></figcaption>
 			   </figure></td>
 				 </tr>
 	   </table>
